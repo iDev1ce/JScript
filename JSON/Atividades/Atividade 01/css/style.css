@@ -1,0 +1,65 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* padronização */
+.center {
+    margin: 0 auto;
+}
+
+#segura_tudo {
+    width: 900px;
+    height: auto;
+    min-height: 600px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+#inputs {
+    width: 250px;
+    height: 20px;
+    background-color: aqua;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+#segura_saidas {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.saidas {
+    width: cover;
+    height: inherit;
+    background-color: aquamarine;
+}
+
+.contador {
+    width: 120px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-left: 50px;
+    margin-right: 100px;
+    padding-top: 40px;
+    float: left;
+    border: solid black 1px;
+}
+
+.cidades {
+    width: 720px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 400px;
+    border: solid 1px black;
+    background-color: mediumseagreen;
+}
