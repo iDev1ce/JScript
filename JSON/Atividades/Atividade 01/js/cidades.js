@@ -22423,20 +22423,38 @@ const cidades = [
    }
 ]
 
-const loop = (  ) => {
-   let tables = "";
-   let i = 1;
-      tables = 
-      `
-      <div class="saidas">
-         <div class="contador">
-            <p>${i}</p>
-         </div>
-         <div class= cidades>
-            <p>${cidades.nome}</p>
-         </div>
-      </div>
-      `
+$estado = document.getElementById("txt_estado");
+$pesquisar = document.getElementById("btn_pesquisar");
+
+
+
+
+
+
+const mostrarDados = ( json ) => {
+
+   criarHtml = (html, aluno) => `${html} ${aluno.nome} - ${aluno.idade} - ${aluno.uf} - ${aluno.salario} <br>`;
+
+   return json.reduce(criarHtml, "");
 }
 
-$tables.innerHTML = loop();
+
+
+
+
+
+const identificadorUF = (estado) => {
+   for (let i = 0; i < cidades.length; i++) {
+      let cidade = cidades[i];
+
+      if (estado == cidade.sigla) {
+         console.log([estado, i]);
+      }
+   }
+}
+
+const listarCidades = () => {
+
+}
+
+$pesquisar.addEventListener("click", ;
