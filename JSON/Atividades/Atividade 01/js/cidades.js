@@ -22457,4 +22457,4 @@ const listarCidades = () => {
 
 }
 
-$pesquisar.addEventListener("click", ;
+$pesquisar.addEventListener("click", () => mostrarDados(cidades));
