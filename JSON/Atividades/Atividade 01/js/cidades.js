@@ -22430,13 +22430,14 @@ $pesquisar = document.getElementById("btn_pesquisar");
 
 
 
-
+/********************* TESTING ************************/
 const mostrarDados = ( json ) => {
 
-   criarHtml = (html, aluno) => `${html} ${aluno.nome} - ${aluno.idade} - ${aluno.uf} - ${aluno.salario} <br>`;
+   criarHtml = (html, aluno) => `/* Aqui vai o codigo que vai criar o HTML */`;
 
    return json.reduce(criarHtml, "");
 }
+/********************* TESTING ************************/
 
 
 
