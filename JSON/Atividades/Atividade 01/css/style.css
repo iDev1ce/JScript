@@ -63,3 +63,34 @@
     border: solid 1px black;
     background-color: mediumseagreen;
 }
+
+.infos {
+    width: cover;
+    height: inherit;
+    background-color: aquamarine;
+}
+
+.info_contador {
+    width: 120px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-left: 50px;
+    margin-right: 100px;
+    padding-top: 40px;
+    float: left;
+    border: solid black 1px;
+}
+
+.info_cidades {
+    width: 720px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 400px;
+    border: solid 1px black;
+    background-color: mediumseagreen;
+}
+
+.dark {
+    background-color: gray
+}

@@ -1,4 +1,4 @@
-const cidades = [
+const cities = [
    {
       "sigla":"AC",
       "nome":"Acre",
@@ -22423,39 +22423,46 @@ const cidades = [
    }
 ]
 
-$estado = document.getElementById("txt_estado");
-$pesquisar = document.getElementById("btn_pesquisar");
+$state = document.getElementById("txt_estado");
+$search = document.getElementById("btn_pesquisar");
+$outputs = document.getElementById("segura_saidas");
 
+const showCities = () => {
 
+   $outputs.innerHTML = "";
 
+   const getState = cidades.filter((state) => state.sigla == $state.value);
+   let theme = "dark";
 
+   for (let i = 0; i < getState[0].cidades.length; i++) {
+      $outputs.innerHTML += `
+      <div class="saidas">
+         <div class="contador">
+               <p>${i}</p>
+         </div>
+         <div class="cidades">
+               <p>${$getState[0].cidades[i].nome}</p>
+         </div>
+      </div>
+      `
 
-/********************* TESTING ************************/
-const mostrarDados = ( json ) => {
-
-   criarHtml = (html, aluno) => `/* Aqui vai o codigo que vai criar o HTML */`;
-
-   return json.reduce(criarHtml, "");
-}
-/********************* TESTING ************************/
-
-
-
-
-
-
-const identificadorUF = (estado) => {
-   for (let i = 0; i < cidades.length; i++) {
-      let cidade = cidades[i];
-
-      if (estado == cidade.sigla) {
-         console.log([estado, i]);
-      }
+      if (theme == "dark")
+         theme == "";
+      else 
+         theme = "dark";
    }
 }
 
-const listarCidades = () => {
+$pesquisar.addEventListener("click", () => showCities(cidades));
 
-}
 
-$pesquisar.addEventListener("click", () => mostrarDados(cidades));
+/* 
+   if (directory) {
+      git commit -m "message"
+      git push -u origin master
+   } else {
+      git add .
+      git commit -m "message"
+      git push -u origin master
+   }
+*/
