@@ -22425,35 +22425,35 @@ const cities = [
 
 $state = document.getElementById("txt_estado");
 $search = document.getElementById("btn_pesquisar");
-$outputs = document.getElementById("segura_saidas");
+$outputs = document.getElementById("saida");
 
 const showCities = () => {
 
-   $outputs.innerHTML = "";
-
-   const getState = cidades.filter((state) => state.sigla == $state.value);
+   const getState = cities.filter((state) => state.sigla == $state.value);
    let theme = "dark";
 
-   for (let i = 0; i < getState[0].cidades.length; i++) {
+   $outputs.innerHTML = "";
+
+   for (let i = 1; i <= getState[0].cidades.length; i++) {
       $outputs.innerHTML += `
-      <div class="saidas">
+      <div class="${theme}">
          <div class="contador">
                <p>${i}</p>
          </div>
-         <div class="cidades">
-               <p>${$getState[0].cidades[i].nome}</p>
+         <div class="cidades ${theme}">
+               <p>${getState[0].cidades[i].nome}</p>
          </div>
       </div>
       `
 
       if (theme == "dark")
-         theme == "";
+         theme = "";
       else 
          theme = "dark";
    }
 }
 
-$pesquisar.addEventListener("click", () => showCities(cidades));
+$search.addEventListener("click", () => showCities(cities));
 
 
 /* 
