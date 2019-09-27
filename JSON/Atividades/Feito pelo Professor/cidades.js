@@ -1,4 +1,4 @@
-const cidades = [
+﻿const db_cidades = [
    {
       "sigla":"AC",
       "nome":"Acre",
@@ -22423,39 +22423,30 @@ const cidades = [
    }
 ]
 
-$estado = document.getElementById("txt_estado");
-$pesquisar = document.getElementById("btn_pesquisar");
+const $pesquisar = document.querySelector('#pesquisar');
+const $conteiner = document.querySelector('#resultado');
 
-
-
-
-
-/********************* TESTING ************************/
-const mostrarDados = ( json ) => {
-
-   criarHtml = (html, aluno) => `/* Aqui vai o codigo que vai criar o HTML */`;
-
-   return json.reduce(criarHtml, "");
-}
-/********************* TESTING ************************/
-
-
-
-
-
-
-const identificadorUF = (estado) => {
-   for (let i = 0; i < cidades.length; i++) {
-      let cidade = cidades[i];
-
-      if (estado == cidade.sigla) {
-         console.log([estado, i]);
-      }
-   }
+const buscarCidades = (db,uf) => {
+   return db.filter(estado => estado.sigla == uf)[0].cidades.map(cidade => cidade.nome);
 }
 
-const listarCidades = () => {
+const mostrarCidades = () => {
+   const estado = document.querySelector('#estado').value;
+   const $conteiner = document.querySelector('#resultado');
+
+   const cidades = buscarCidades(db_cidades, estado.toUpperCase());
+   $conteiner.innerHTML = criarLinhas(cidades);
 
 }
 
-$pesquisar.addEventListener("click", () => mostrarDados(cidades));
+const criarLinhas = (cidades) => {
+   return cidades.reduce( (acumulador, cidade, i) =>
+      `${acumulador}
+      <tr class="${(i % 2) == "0" ? 'corLinha' : ''}">
+         <td> ${i + 1} </td>
+         <td> ${cidade} </td>
+      </tr>`
+   , "");
+}
+
+$pesquisar.addEventListener('click', mostrarCidades);

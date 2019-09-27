@@ -14,7 +14,7 @@
     height: auto;
     min-height: 600px;
     margin-top: 50px;
-    border: solid 1px black;
+    background-color: antiquewhite;
     box-sizing: border-box;
     padding-top: 50px;
     overflow: hidden;
@@ -24,6 +24,7 @@
 #inputs {
     width: 250px;
     height: 20px;
+    background-color: aqua;
     box-sizing: border-box;
     margin-left: 50px;
 }
@@ -39,6 +40,7 @@
 .saidas {
     width: cover;
     height: inherit;
+    background-color: aquamarine;
 }
 
 .contador {
@@ -50,7 +52,6 @@
     padding-top: 40px;
     float: left;
     border: solid black 1px;
-    font-family: 'segoe ui'
 }
 
 .cidades {
@@ -60,48 +61,5 @@
     padding-top: 40px;
     padding-left: 400px;
     border: solid 1px black;
-    font-family: 'segoe ui'
-}
-
-#infos {
-    width: cover;
-    height: 100%;
-}
-
-.info_contador {
-    width: 120px;
-    height: inherit;
-    box-sizing: border-box;
-    padding-left: 50px;
-    margin-right: 100px;
-    padding-top: 40px;
-    float: left;
-    border: solid black 1px;
-    color: white;
-    font-family: 'segoe ui'
-}
-
-.info_cidades {
-    width: 720px;
-    height: inherit;
-    box-sizing: border-box;
-    padding-top: 40px;
-    padding-left: 400px;
-    border: solid 1px black;
-    background-color: gray;
-    color: white;
-    font-family: 'segoe ui'
-}
-
-.dark {
-    background-color: lightgray;
-}
-
-#saida {
-    box-sizing: border-box;
-    padding-bottom: 40px;
-}
-
-p {
-    margin-bottom: 35px;
+    background-color: mediumseagreen;
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Consumindo API</title>
+    </head>
+
+    <body>
+        <div style="display: flex; flex-direction:column;">
+            <label>
+                CEP:
+                <input type="text" id="cep">
+            </label>
+            <label>
+                Logradouro:
+                <input type="text" id="logradouro" readonly>
+            </label>
+            <label>
+                Bairro:
+                <input type="text" id="bairro" readonly>
+            </label>
+            <label>
+                Número:
+                <input type="text" id="numero">
+            </label>
+            <label>
+                Cidade:
+                <input type="text" id="cidade" readonly>
+            </label>
+            <label>
+                Estado:
+                <input type="text" id="estado" readonly>
+            </label>
+        </div>
+
+        <script src="js/cep.js"></script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 50vw;
+    margin: 10vh auto;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 5vh 0;
+}
+
+.cidades {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    width: 50vw;
+    border: 1px solid black;
+}
+
+th {
+    background-color: gray;
+    height: 5vh;
+    color: white;
+}
+td {
+    height: 5vh;
+}
+
+#estado {
+    width: 100%;
+}
+
+.corLinha {
+    background-color:#f0f0f0;
+}
