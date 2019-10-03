@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="container" class="center">
+            <h1> Conversor de moedas </h1>
+            <!-- De -->
+            <div class="conversor">
+                <p>
+                    De: 
+                </p>
+                <select id="convert">
+                    <option> BRL </option>
+                    <option> ARS </option>
+                    <option> EUR </option>
+                    <option> USD </option>
+                    <option> GBP </option>
+                </select>
+                <input type="text" value="" placeholder="Valor para Converter" id="txt_convert">
+            </div>
+            <!-- Para -->
+            <div class="conversor">
+                <p>
+                    Para: 
+                </p>
+                <select id="converted">
+                    <option> ARS </option>
+                    <option> EUR </option>
+                    <option> USD </option>
+                    <option> GBP </option>
+                </select>
+                <input type="text" value="" placeholder="Valor Convertido" id="txt_converted" readonly>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
