@@ -1,0 +1,37 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Padronização */
+.center {
+    margin: 0 auto;
+}
+
+#container {
+    width: 40%;
+    min-height: 300px;
+    height: auto;
+    background: #222;
+    margin-top: 30px;  
+    padding: 15px;
+}
+
+#container div {
+    margin-bottom: 30px;
+}
+
+#container label input {
+    width: 170px;
+    font-family: 'segoe ui';
+}
+
+#container #infos img {
+    width: 150px;
+    height: 120px;
+    background: #888;
+    margin-left: 85px;
+}
